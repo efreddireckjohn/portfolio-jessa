@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#ff81ea;
+}
+
+header{
+    background:rgb(191, 12, 167);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:rgb(235, 113, 235);
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:rgb(177, 9, 166);
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+section{
+    background:rgb(229, 105, 208);
+    margin:20px 0;
+    padding:20px;
+    border-radius:8px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+footer{
+    text-align:center;
+    background:#333;
+    color:rgba(146, 73, 195, 0.709);
+    padding:15px;
+}
+.avatar{
+  width:160px;border-radius:50%;
+  border:5px solid #ffb3c6;
+  margin-bottom:20px;
+  animation:avatarFloat 3s ease-in-out infinite;
+}
+/* I-target nato ang link sa sulod sa project-card */
+.project-card a {
+  display: inline-block;
+  background-color: #333; /* Itom/Dark Gray para mo-pop sa pink */
+  color: white;           /* Puti ang text */
+  padding: 12px 24px;     /* Gidak-on sa button */
+  margin: 10px 0;         /* Spacing sa taas ug ubos */
+  text-decoration: none;  /* Tangtangon ang underline */
+  border-radius: 25px;    /* Linginon ang edges */
+  font-family: sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Para hapsay ang transition */
+  border: 2px solid transparent;
+}
+
+/* Inig itudlo ang mouse (Hover Effect) */
+.project-card a:hover {
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+  transform: scale(1.05); /* Modako gamay */
+}
+nav a {
+    color: rgb(177, 9, 166);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    display: inline-block; /* Importante para mo-lihok ang transform */
+    transition: transform 0.3s ease, color 0.3s ease; /* Para smooth ang animation */
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    transform: translateY(-5px) scale(1.1); /* Mo-alsa (split) ug modako gamay */
+}
+html {
+    scroll-behavior: smooth;
+}
+.btn-contact-bottom {
+    display: inline-block;
+    background-color: #8b008b;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.btn-contact-bottom:hover {
+    transform: scale(1.05);
+    background-color: #ff81ea; /* Mag-pink inig hover */
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="jjjj1.jpg" alt="avatar" class="avatar">
+<h1>My Portfolio</h1>
+<p>Student | Future Web Developer</p>
+</header>
+
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am <b>Jesa Mae Lapuz</b>. I am a student who enjoys learning web development and improving my skills in coding.</p>
+    </section>
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</section>
+
+<section id="projects" class="page">
+    <h1>My Projects</h1>
+
+    <div class="project-card">
+        <a href="kayamukat.html" target="_blank">log in</a>
+    </div>
+
+    <div class="project-card">
+        <a href="joy.html" target="_blank">value</a>
+    </div>
+
+    <div class="project-card">
+        <a href="jesas.html" target="_blank">windows alert</a>
+    </div>
+
+</section>
+
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>For more information just contact me:</p>
+    
+    <a href="mailto:jessalapus74@gmail.com" class="btn-contact-bottom">
+        jessalapus74@gmail.com
+    </a>
+</section>
+</div>
+
+<footer>
+<p>© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
